@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function layout({ children }) {
+export default function Layout({ children }) {
   const router = useRouter();
 
   function isActive(currentPath) {
