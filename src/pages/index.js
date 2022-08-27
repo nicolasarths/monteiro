@@ -19,7 +19,7 @@ export default function Home() {
             com rampa automatizada, 24 horas por dia,
             onde quer que você esteja!
           </p>
-          <div className="schedule-links">
+          <div className="grid-text-schedule-links">
             <a href="/contato">
               &#x2611; Agendar
             </a> | <a href="tel:5551986561694">
