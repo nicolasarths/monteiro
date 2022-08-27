@@ -42,14 +42,8 @@
     font-size: 3rem;
   
     letter-spacing: 0.15rem;
-  
     text-transform: uppercase;
-  }
-
-  .grid-text-schedule-links {
-    display: inline-flex;
-    width: 100%;
-    justify-content: space-between;
+    text-align: left;
   }
   
   @media only screen and (max-width: 1200px){
@@ -58,9 +52,50 @@
       max-width: 800px;
     }
 
-    .grid-item-3 { order: 1}
+    .grid, .grid-title {
+      text-align: center;
+    } 
+
+    .grid-item-3 { order: 1 }
   }
 
+  @media only screen and (max-width: 600px){
+    .rescue-button {
+      display: inline-flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      position: fixed;
+      width: 80%;
+
+      bottom: 50px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      padding: .5em .8em;
+
+      color: white;
+      background-color: green;
+      border-radius: 10px;
+      opacity: 90%;
+
+      animation: fade-in 3s;
+    }
+    .rescue-button-whatsapp-icon {
+      position: absolute;
+      bottom: .4em;
+      left: 20px;
+      width: 2rem;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 95%;
+    }
+  }
   /*
 
   

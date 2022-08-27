@@ -1,0 +1,44 @@
+.cover {
+    background-color: black;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 120px;
+}
+
+.menu {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+  
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+    color: white;
+    background-color: black;
+  
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.menu-option:hover {
+    color: var(--primary-red);
+    cursor:pointer;
+}
+
+.active {
+    color: var(--primary-red);
+}
+
+.menu-option-icon {
+  width: 1.3rem;
+  margin-right: .5em;
+}
+
+@media only screen and (max-width: 1200px){
+    .cover-bg {
+        display:none;
+    }
+}
