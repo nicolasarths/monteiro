@@ -18,13 +18,13 @@ export default function Layout({ children }) {
   }
 
   return (
-    <>
+    <nav>
       <div className="cover">
         <div className="cover-bg">
           <Image
             src="/big-cover.png"
             layout="fill"
-            objectFit={"cover"}
+            objectFit={"contain"}
             alt="plano de fundo da capa"
           />
         </div>
@@ -52,7 +52,7 @@ export default function Layout({ children }) {
             <label>Agendar</label>
           </div>
         </Link>
-        <Link href="tel:5551986561694">
+        <Link href="tel:51986561694">
           <div className="menu-option">
             <FontAwesomeIcon icon={faPhone} className="menu-option-icon" />
             <label>Ligar</label>
@@ -60,6 +60,6 @@ export default function Layout({ children }) {
         </Link>
       </div>
       {children}
-    </>
+    </nav>
   );
 }
