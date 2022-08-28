@@ -18,7 +18,7 @@ export default function Layout({ children }) {
   }
 
   return (
-    <nav>
+    <>
       <div className="cover">
         <div className="cover-bg">
           <Image
@@ -60,6 +60,18 @@ export default function Layout({ children }) {
         </Link>
       </div>
       {children}
-    </nav>
+      <footer className="footer">
+        <span className="decor-none">
+          <li><a href="">Contatar</a></li>
+          <li><a href="">Aluguel de reboques</a></li>
+          <li><a href="">Trabalhe conosco</a></li>
+        </span>
+
+        <span className="footer-rights">Monteiro Mototransporte 2022</span>
+        <span className="footer-credits">
+          Design by <a href="https://www.nicolasarths.com">@nicolasarths</a>
+        </span>
+      </footer>
+    </>
   );
 }

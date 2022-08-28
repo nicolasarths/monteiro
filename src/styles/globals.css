@@ -7,6 +7,10 @@
   --visited: rgb(173, 7, 7);
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body, html {
   box-sizing: border-box;
 }
@@ -45,3 +49,8 @@ label{
 .justify { text-align: justify; }
 
 .hide { display: none }
+
+.decor-none {
+  text-decoration: none;
+  list-style-type: none;
+}
