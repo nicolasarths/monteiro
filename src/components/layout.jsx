@@ -24,7 +24,7 @@ export default function Layout({ children }) {
           <Image
             src="/big-cover.png"
             layout="fill"
-            objectFit={"contain"}
+            objectFit={"cover"}
             alt="plano de fundo da capa"
           />
         </div>
