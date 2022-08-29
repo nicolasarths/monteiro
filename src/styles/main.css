@@ -15,19 +15,23 @@
 
   .grid {
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 1fr;
+    align-items: center;
     margin: auto;
     max-width: 1200px;
+
+    text-align: center;
   }
 
   .grid-image {
     position: relative;
-    height: 400px;
     padding: 5px;
+    height: 800px;
   }
 
   .grid-image img {
-    object-fit: cover;
+    height:auto;
+    object-fit: contain;
   }
 
   .grid-text {
@@ -50,7 +54,6 @@
   
     letter-spacing: 0.15rem;
     text-transform: uppercase;
-    text-align: left;
   }
   
   @media only screen and (max-width: 1200px){
@@ -59,11 +62,15 @@
       max-width: 800px;
     }
 
-    .grid, .grid-title {
-      text-align: center;
-    } 
+    .grid-image {
+      height: 600px;
+    }
+  }
 
-    .grid-item-3 { order: 1 }
+  @media only screen and (max-width: 800px){
+    .grid-image {
+      height: 400px;
+    }
   }
 
   @media only screen and (max-width: 600px){
