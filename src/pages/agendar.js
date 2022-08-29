@@ -20,7 +20,7 @@ export default function contato() {
                 className="form-input"
                 type="tel"
                 required
-                placeholder="Apenas números. Ex: 51912345678" />
+                placeholder="Apenas números. Ex: 051912345678" />
 
             <label form="send-message" htmlFor="data">
                 Data
