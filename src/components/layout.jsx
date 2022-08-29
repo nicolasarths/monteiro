@@ -52,7 +52,7 @@ export default function Layout({ children }) {
             <label>Agendar</label>
           </div>
         </Link>
-        <Link href="tel:51986561694">
+        <Link href="tel:051986561694">
           <div className="menu-option">
             <FontAwesomeIcon icon={faPhone} className="menu-option-icon" />
             <label>Ligar</label>

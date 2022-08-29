@@ -27,10 +27,6 @@
   margin-bottom: 10px;
 }
 
-::-webkit-calendar-picker-indicator {
-  caret-color: red;
-}
-
 .form-submit {
   text-align: left;
   margin-top: 10px;
