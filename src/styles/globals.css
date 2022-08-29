@@ -4,11 +4,15 @@
   
   --primary-red: rgb(255, 27, 65);
 
-  --visited: rgb(173, 7, 7);
+  --secondary-red: rgb(173, 7, 7);
 }
 
-html, body {
-  overflow-x: hidden;
+*{
+  box-sizing: border-box;
+}
+
+body, html {
+  box-sizing: border-box;
 }
 
 body {
@@ -19,10 +23,6 @@ body {
   font-size: 1.5rem;
   min-width: 600px;
   background-color: var(--primary-black);
-}
-
-h1, h2 {
-  font-family: 'Rubik Dirt', sans-serif;
 }
 
 a {
@@ -45,3 +45,8 @@ label{
 .justify { text-align: justify; }
 
 .hide { display: none }
+
+.decor-none {
+  text-decoration: none;
+  list-style-type: none;
+}

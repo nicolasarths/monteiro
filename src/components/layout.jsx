@@ -43,8 +43,8 @@ export default function Layout({ children }) {
             <label>Início</label>
           </div>
         </Link>
-        <Link href="/contato">
-          <div className={isActive("/contato")}>
+        <Link href="/agendar">
+          <div className={isActive("/agendar")}>
             <FontAwesomeIcon
               icon={faCheckSquare}
               className="menu-option-icon"
@@ -52,7 +52,7 @@ export default function Layout({ children }) {
             <label>Agendar</label>
           </div>
         </Link>
-        <Link href="tel:5551986561694">
+        <Link href="tel:51986561694">
           <div className="menu-option">
             <FontAwesomeIcon icon={faPhone} className="menu-option-icon" />
             <label>Ligar</label>
@@ -60,6 +60,18 @@ export default function Layout({ children }) {
         </Link>
       </div>
       {children}
+      <footer className="footer">
+        <span className="decor-none">
+          <li><a href="">Contatar</a></li>
+          <li><a href="">Aluguel de reboques</a></li>
+          <li><a href="">Trabalhe conosco</a></li>
+        </span>
+
+        <span className="footer-rights">Monteiro Guincho de Moto</span>
+        <span className="footer-credits">
+          Design by <a href="https://www.nicolasarths.com">@nicolasarths</a>
+        </span>
+      </footer>
     </>
   );
 }

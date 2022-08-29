@@ -1,44 +1,76 @@
 .cover {
-    background-color: black;
-    position: relative;
-    margin: auto;
-    width: 100%;
-    height: 120px;
+  background-color: black;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 150px;
 }
 
 .menu {
-    display: inline-flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    width: 100%;
-  
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    
-    color: white;
-    background-color: black;
-  
-    padding: 10px;
-    font-size: 1.5rem;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  color: white;
+  background-color: black;
+
+  padding: 10px;
+  font-size: 1.5rem;
 }
 
 .menu-option:hover {
-    color: var(--primary-red);
-    cursor:pointer;
+  color: var(--primary-red);
+  cursor: pointer;
 }
 
 .active {
-    color: var(--primary-red);
+  color: var(--primary-red);
 }
 
 .menu-option-icon {
   width: 1.3rem;
-  margin-right: .5em;
+  margin-right: 0.5em;
+}
+.footer {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+
+  width: 100%;
+  padding: 2rem;
+  background-color: black;
+
+  color: white;
+  font-size: 1rem;
 }
 
-@media only screen and (max-width: 1200px){
-    .cover-bg {
-        display:none;
+.footer a {
+  color: red;
+}
+.footer a:hover {
+  color: rgb(255, 166, 0);
+}
+
+@media only screen and (max-width: 1200px) {
+  .cover-bg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 750px){
+    .footer{
+        flex-flow: column;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .footer{
+        padding-bottom: 130px;
     }
 }
