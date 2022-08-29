@@ -6,13 +6,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Monteiro Mototransporte</title>
+        <title>Monteiro Guincho de Moto</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="grid justify">
         <div className="grid-text grid-item-1">
           <h2 className="grid-title">
-            Transporte seguro de motocicletas
+            Guincho de Moto
           </h2>
           <p>
             Transporte de motos realizado com total
@@ -38,7 +38,7 @@ export default function Home() {
 
         <div className="grid-text grid-item-4">
           <h2 className="grid-title">
-            Guincho de Moto
+            Atendimento 24h
           </h2>
           <ul>
             <li>

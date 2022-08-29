@@ -1,0 +1,45 @@
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  margin: auto;
+
+  color: white;
+  max-width: 500px;
+}
+
+.form-title {
+  font-size: 2rem;
+  color: var(--primary-red);
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.form label {
+  margin-top: 10px;
+}
+
+.form-input {
+  font-family: 'Open Sans', -apple-system,   Helvetica Neue, sans-serif;
+  font-size: 1.2rem;
+  padding: .5em;
+  margin-bottom: 10px;
+}
+
+::-webkit-calendar-picker-indicator {
+  caret-color: red;
+}
+
+.form-submit {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+  .form-container {
+    width: 90%;
+    max-width: 500px;
+  }
+}

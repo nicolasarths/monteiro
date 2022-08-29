@@ -43,8 +43,8 @@ export default function Layout({ children }) {
             <label>Início</label>
           </div>
         </Link>
-        <Link href="/contato">
-          <div className={isActive("/contato")}>
+        <Link href="/agendar">
+          <div className={isActive("/agendar")}>
             <FontAwesomeIcon
               icon={faCheckSquare}
               className="menu-option-icon"
@@ -67,7 +67,7 @@ export default function Layout({ children }) {
           <li><a href="">Trabalhe conosco</a></li>
         </span>
 
-        <span className="footer-rights">Monteiro Mototransporte 2022</span>
+        <span className="footer-rights">Monteiro Guincho de Moto</span>
         <span className="footer-credits">
           Design by <a href="https://www.nicolasarths.com">@nicolasarths</a>
         </span>
