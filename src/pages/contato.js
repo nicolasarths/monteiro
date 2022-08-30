@@ -1,7 +1,7 @@
 export default function contato() {
     return (
         <form className="form" id="send-message" method="post" action="">
-            <h1 className="form-title">Agendar transporte</h1>
+            <h1 className="form-title">Contato</h1>
             <label form="send-message" htmlFor="nome">
                 Nome
             </label>
@@ -22,15 +22,6 @@ export default function contato() {
                 required
                 placeholder="Apenas números. Ex: 051912345678" />
 
-            <label form="send-message" htmlFor="data">
-                Data
-            </label>
-            <input
-                className="form-input form-date-input"
-                id="data"
-                type="date"
-                required/>
-
             <label form="send-message" htmlFor="mensagem">
                 Mensagem*
             </label>
@@ -40,8 +31,7 @@ export default function contato() {
                 rows="5"
                 required
                 placeholder="Especificar o modelo da moto,
-                        locais de origem e destino
-                        em casos de orçamento.">
+                        locais de origem e destino.">
             </textarea>
             <input
                 className="form-input form-submit"

@@ -53,7 +53,7 @@
 .footer a {
   color: red;
 }
-.footer a:hover {
+.footer-credits a:hover {
   color: rgb(255, 166, 0);
 }
 

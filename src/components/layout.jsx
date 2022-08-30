@@ -1,3 +1,4 @@
+import Settings from './Settings.json'
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -43,13 +44,13 @@ export default function Layout({ children }) {
             <label>Início</label>
           </div>
         </Link>
-        <Link href="/agendar">
-          <div className={isActive("/agendar")}>
+        <Link href="/contato">
+          <div className={isActive("/contato")}>
             <FontAwesomeIcon
               icon={faCheckSquare}
               className="menu-option-icon"
             />
-            <label>Agendar</label>
+            <label>Contato</label>
           </div>
         </Link>
         <Link href="tel:051986561694">
@@ -62,9 +63,8 @@ export default function Layout({ children }) {
       {children}
       <footer className="footer">
         <span className="decor-none">
-          <li><a href="">Contatar</a></li>
-          <li><a href="">Aluguel de reboques</a></li>
-          <li><a href="">Trabalhe conosco</a></li>
+          <li><Link href="/contato">Contatar</Link></li>
+          <li><Link href={Settings.whatsappLink}>Whatsapp</Link></li>
         </span>
 
         <span className="footer-rights">Monteiro Guincho de Moto</span>

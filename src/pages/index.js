@@ -2,6 +2,8 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 import Image from "next/image";
+import Settings from "../components/Settings.json"
+
 export default function Home() {
   return (
     <>
@@ -82,7 +84,7 @@ export default function Home() {
 
       </main>
       <span className="rescue-button rescue-button-bg hide">
-        <a href="https://wa.me/5551986561694">
+        <a href={Settings.whatsappLink}>
           <FontAwesomeIcon icon={faWhatsapp} className="rescue-button-whatsapp-icon rescue-button-bg" />
           Solicitar resgate
         </a>
