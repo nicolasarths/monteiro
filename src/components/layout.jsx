@@ -69,7 +69,7 @@ export default function Layout({ children }) {
 
         <span className="footer-rights">Monteiro Guincho de Moto</span>
         <span className="footer-credits">
-          Design by <a href="https://www.nicolasarths.com">@nicolasarths</a>
+          Design by <a href="https://www.nicolasarths.com.br">@nicolasarths</a>
         </span>
       </footer>
     </>
