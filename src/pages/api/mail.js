@@ -13,7 +13,7 @@ export default function handler(req, res) {
   let message = ""
   lines.forEach(line => message+=line)
 
-  const subject = `${formObject.subject} ID#${uniqueIdentifier()}`;
+  const subject = `Mensagem ID#${uniqueIdentifier()}`;
   const text = JSON.stringify(formObject);
   const html = message
 
