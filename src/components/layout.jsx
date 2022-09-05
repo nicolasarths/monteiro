@@ -53,7 +53,7 @@ export default function Layout({ children }) {
             <label>Contato</label>
           </div>
         </Link>
-        <Link href="tel:051986561694">
+        <Link href={Settings.phoneHref}>
           <div className="menu-option">
             <FontAwesomeIcon icon={faPhone} className="menu-option-icon" />
             <label>Ligar</label>
@@ -63,13 +63,16 @@ export default function Layout({ children }) {
       {children}
       <footer className="footer">
         <span className="decor-none">
-          <li><Link href="/contato">Contatar</Link></li>
-          <li><Link href={Settings.whatsappLink}>Whatsapp</Link></li>
+          <li><Link href={Settings.phoneHref}>Ligar</Link></li>
+          <li><Link href="/contato">Enviar e-mail</Link></li>
+          <li><Link href={Settings.whatsappLink}>Enviar mensagem via Whatsapp</Link></li>
         </span>
 
         <span className="footer-rights">Monteiro Guincho de Moto</span>
         <span className="footer-credits">
-          Design by <a href="https://www.nicolasarths.com.br">@nicolasarths</a>
+          Design by <Link href="https://www.nicolasarths.com.br">@nicolasarths</Link> <br/>
+          <Link href="https://www.nicolasarths.com.br/contato">Contatar</Link><br/>
+          <Link href="https://www.nicolasarths.com.br/contato">Feedback</Link>
         </span>
       </footer>
     </>
