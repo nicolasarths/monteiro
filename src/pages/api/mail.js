@@ -3,7 +3,7 @@ import {v4 as uniqueIdentifier} from "uuid"
 
 mail.setApiKey(process.env.SENDGRID_API_KEY)
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   const formObject = JSON.parse(req.body)
   const lines = Object.entries(formObject).map(obj => {
     return `
@@ -26,11 +26,13 @@ export default function handler(req, res) {
   }
 
   try {
-    mail.send(data)
+    const response = await mail.send(data)
+    if (response.statusCode > 300) res.status(500).json({status: 'Fail'})
+    else res.status(200).json({ status: 'Ok' })
   } catch (error) {
     console.log(error)
+    res.status(500).json({status: 'Fail'})
   }
   
   
-  res.status(200).json({ status: 'Ok' })
 }

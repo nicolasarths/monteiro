@@ -1,4 +1,9 @@
-export default function contato() {
+import { useState } from "react";
+import Link from "next/link";
+import Settings from '../components/Settings.json'
+
+export default function Contato() {
+    const [result, setResult] = useState()
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -8,16 +13,33 @@ export default function contato() {
           formData[field.name] = field.value;
         });
       
-        fetch('/api/mail', {
+        const response = await fetch('/api/mail', {
           method: 'post',
           body: JSON.stringify(formData)
         })
+
+        if (response.status > 300) {setResult(Failure)}
+        else {setResult(Success)}
       }
+
+    function Success () {
+        return (<>
+            <span className="form-alert bg-success">Mensagem enviada com sucesso!</span>
+        </>)
+    }
+
+    function Failure () {
+        return (<>
+            <span className="form-alert bg-failure">
+                Ocorreu um erro! Tente novamente ou nos contate por <Link href={Settings.phoneHref}><strong>ligação</strong></Link> ou <Link href={Settings.whatsappLink}><strong>whatsapp</strong></Link>.
+            </span>
+        </>)
+    }
 
     return (
         <form className="form" id="send-message" method="post" onSubmit={handleSubmit}>
             <h1 className="form-title">Contato</h1>
-            <label form="send-message" htmlFor="nome">
+            <label className="form-label" form="send-message" htmlFor="nome">
                 Nome
             </label>
             <input
@@ -28,7 +50,7 @@ export default function contato() {
                 required
                 placeholder="Digite seu nome aqui..." />
 
-            <label form="send-message" htmlFor="telefone">
+            <label className="form-label" form="send-message" htmlFor="telefone">
                 Telefone para contato
             </label>
             <input
@@ -39,7 +61,7 @@ export default function contato() {
                 required
                 placeholder="Apenas números. Ex: 051912345678" />
 
-            <label form="send-message" htmlFor="mensagem">
+            <label className="form-label" form="send-message" htmlFor="mensagem">
                 Mensagem*
             </label>
             <textarea
@@ -47,14 +69,12 @@ export default function contato() {
                 name="mensagem"
                 className="form-input"
                 rows="5"
-                required
-                placeholder="Especificar o modelo da moto,
-                        locais de origem e destino.">
+                required>
             </textarea>
             <input
                 className="form-input form-submit"
                 type="submit"
                 value="Enviar" />
-
+                {result}
         </form>)
 }
