@@ -18,7 +18,7 @@ export default async function handler(req, res) {
   const html = message
 
   const data = {
-    to: 'guinchodemoto.recebe@gmail.com',
+    to: 'contato@monteiromototransporte.com.br',
     from: 'nicolasarths.sender@gmail.com',
     subject,
     text,
