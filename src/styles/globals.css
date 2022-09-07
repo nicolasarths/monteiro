@@ -6,6 +6,9 @@
   --secondary-red: rgb(173, 7, 7);
 
   --highlight: rgb(255, 255, 255);
+
+  --success: green;
+  --failure: red;
 }
 
 *{
@@ -35,6 +38,8 @@ label{
   cursor: inherit;
 }
 
+.bg-success { background-color: var(--success);}
+.bg-failure { background-color: var(--failure); }
 
 .container {
   max-width: 60rem;
