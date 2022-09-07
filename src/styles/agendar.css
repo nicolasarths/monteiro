@@ -3,6 +3,7 @@
   flex-flow: column wrap;
   gap: 10px;
   margin: auto;
+  margin-bottom: 40px;
 
   color: white;
   max-width: 500px;
@@ -16,7 +17,7 @@
   margin-top: 15px;
 }
 
-.form label {
+.form-label {
   margin-top: 10px;
 }
 
@@ -31,7 +32,15 @@
 .form-submit {
   text-align: left;
   margin-top: 10px;
-  margin-bottom: 30px;
+}
+
+.form-alert {
+  font-family: roboto, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 100;
+  padding: .7em;
+  border-radius: 10px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 500px) {
