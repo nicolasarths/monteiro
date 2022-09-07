@@ -61,15 +61,22 @@
   color: rgb(255, 166, 0);
 }
 
+.footer-list{
+  display: flex;
+  flex-flow: column;
+}
+
 @media only screen and (max-width: 1200px) {
   .cover-bg {
     display: none;
   }
 }
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 900px){
     .footer{
         flex-flow: column;
+        text-align: center;
+        gap: 30px;
     }
 }
 
