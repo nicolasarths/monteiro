@@ -43,6 +43,12 @@
   text-align: center;
 }
 
+.form-alert-a {
+  color: rgb(61, 0, 0);
+  font-family: arial, sans-serif;
+  font-weight: 800;
+}
+
 @media only screen and (max-width: 500px) {
   .form-container {
     width: 90%;

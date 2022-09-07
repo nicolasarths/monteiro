@@ -31,7 +31,7 @@ export default function Contato() {
     function Failure () {
         return (<>
             <span className="form-alert bg-failure">
-                Ocorreu um erro! Tente novamente ou nos contate por <Link href={Settings.phoneHref}><strong>ligação</strong></Link> ou <Link href={Settings.whatsappLink}><strong>whatsapp</strong></Link>.
+                Ocorreu um erro! Tente novamente ou nos contate por <Link href={Settings.phoneHref}><strong className="form-alert-a">ligação</strong></Link> ou <Link href={Settings.whatsappLink}><strong className="form-alert-a">whatsapp</strong></Link>.
             </span>
         </>)
     }
