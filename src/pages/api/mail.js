@@ -28,7 +28,6 @@ export default async function handler(req, res) {
 
   try {
     const [response, string] = await mail.send(data)
-    console.log(response)
     if (response.statusCode > 199 && response.statusCode < 300) res.status(200).json({status: 'Ok'})
     else res.status(500).json({ status: 'Fail' })
   } catch (error) {
