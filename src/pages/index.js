@@ -9,7 +9,6 @@ export default function Home() {
     <>
       <Head>
         <title>Monteiro Guincho de Moto</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="grid justify">
         <div className="grid-text grid-item-1">

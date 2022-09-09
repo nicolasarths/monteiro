@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Settings from "../../components/Settings.json";
+import Head from "next/head";
 
 export default function Contato() {
   const [result, setResult] = useState();
@@ -39,6 +40,9 @@ export default function Contato() {
   function Failure() {
     return (
       <>
+      <Head>
+        <title>Monteiro Guincho de Moto - Contato</title>
+      </Head>
         <span className="form-alert bg-failure relative">
           <span className="close-x" onClick={handleCloseAlert}>
             x
