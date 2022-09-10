@@ -4,6 +4,7 @@ import '../styles/globals.css'
 import '../styles/main.css'
 import '../styles/layout.css'
 import '../styles/agendar.css'
+import '../styles/not-found.css'
 
 
 function MyApp({ Component, pageProps }) {
