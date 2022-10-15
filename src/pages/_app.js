@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps }) {
   return(
   <Layout>
     <Head>
+      <link rel="shortcut icon" href="/favicon.png" />
       <meta name="viewport" content="width=device-width"/>
     </Head>
     <Component {...pageProps} />
