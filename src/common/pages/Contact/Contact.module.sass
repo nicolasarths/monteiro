@@ -1,0 +1,90 @@
+@use "common/styles/variables/classes" as *
+
+.container
+    display: flex
+    flex-direction: column
+    align-items: center
+    
+    min-height: 60vh
+    width: 100%
+    max-width: 1000px
+    margin: auto
+    padding: 20px
+
+    h1
+        font-size: 2rem
+        font-weight: 900
+        color: var(--primary-red)
+        margin: 32px 0
+        padding: 0
+        margin-top: 15px
+        text-transform: uppercase
+        position: relative
+        width: fit-content
+
+        &::after
+            @extend .small-underline
+            background-color: var(--primary-red)
+            width: 100%
+            
+        
+    form
+        display: flex
+        flex-direction: column
+        margin-bottom: 40px
+
+        color: white
+        max-width: 1200px
+
+        width: 100%
+
+        section
+            display: flex
+            flex-flow: column nowrap
+            width: 100%
+
+        @media screen and (min-width: 600px)
+            justify-content: center
+            flex-flow: row nowrap
+            gap: 32px
+            section
+                width: 40vw
+
+        label
+            margin-block: 10px
+
+        input, textarea
+            font-family: 'Open Sans', -apple-system, Helvetica Neue, sans-serif
+            font-size: 1.2rem
+            padding: .5em
+            margin-bottom: 10px
+            resize: none
+            border-radius: 5px
+
+        .submit
+            background-color: white
+            font-weight: 700
+            text-align: left
+            margin-top: 10px
+
+    .alert
+        background-color: red
+        position: fixed
+        z-index: 3
+        left: 30%
+        right: 30%
+        top: 50px
+        font-family: roboto, sans-serif
+        font-size: 1.3rem
+        font-weight: 100
+        border-radius: 10px
+        text-align: center
+        padding: 15px 30px
+
+        .close
+            position: absolute
+            font-size: 1.3rem
+            font-weight: 600
+            top: 5px
+            right: 15px
+            cursor: pointer

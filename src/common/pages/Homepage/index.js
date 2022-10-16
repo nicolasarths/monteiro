@@ -85,7 +85,7 @@ const Homepage = () => {
 
       </main>
       <span className="rescue-button rescue-button-bg hide">
-        <a href={hrefs.WHATSAPP}>
+        <a href={hrefs.SEND_WHATSAPP_MESSAGE}>
           <FontAwesomeIcon icon={faWhatsapp} className="rescue-button-whatsapp-icon rescue-button-bg" />
           Solicitar resgate
         </a>

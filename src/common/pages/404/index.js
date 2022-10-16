@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Link from "next/link"
 
-import styles from "./styles.module.sass"
+import styles from "./NotFound.module.sass"
 
 const NotFound = () => {
     return (<>
