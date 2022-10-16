@@ -3,6 +3,8 @@ import Layout from 'common/layouts/main'
 import '../styles/globals.css'
 import '../styles/main.css'
 
+import { GoogleAnalyticsComponent } from 'common/features/googleAnalytics'
+
 
 function MyApp({ Component, pageProps }) {
   return(
@@ -12,6 +14,8 @@ function MyApp({ Component, pageProps }) {
       <meta name="viewport" content="width=device-width"/>
     </Head>
     <Component {...pageProps} />
+
+    <GoogleAnalyticsComponent/>
   </Layout>
   )
 }
