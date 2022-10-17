@@ -6,7 +6,7 @@ import '../styles/main.css'
 import { GoogleAnalyticsComponent } from 'common/features/googleAnalytics'
 
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   return(
   <Layout>
     <Head>

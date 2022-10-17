@@ -5,7 +5,7 @@ import Head from "next/head";
 
 import styles from "./Contact.module.sass";
 
-export default function Contato() {
+const ContactPage = () => {
   const [result, setResult] = useState();
 
   const alert = (setter) => {
@@ -13,7 +13,7 @@ export default function Contato() {
     setTimeout(() => setResult(""), 10000);
   };
 
-  async function handleSubmit(e) {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     setResult(Loading);
@@ -36,11 +36,11 @@ export default function Contato() {
     }
   }
 
-  function handleCloseAlert() {
+  const handleCloseAlert = () => {
     setResult("");
   }
 
-  function Failure() {
+  const Failure = () => {
     return (
       <>
         <Head>
@@ -66,7 +66,7 @@ export default function Contato() {
     );
   }
 
-  function Loading() {
+  const Loading = () => {
     return (
       <>
         <span className="form-alert bg-gray padding">
@@ -116,3 +116,4 @@ export default function Contato() {
     </div>
   );
 }
+export default ContactPage;

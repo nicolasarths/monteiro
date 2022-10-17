@@ -8,15 +8,14 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import coverBackground from "./assets/cover-background.png";
 import coverImage from "./assets/cover-image.png";
 
 import styles from "./MainLayout.module.sass";
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
   const router = useRouter();
 
-  function isActive(currentPath) {
+  const isActive = (currentPath) => {
     return router.pathname == currentPath
       ? styles.menuOption + " " + styles.active
       : styles.menuOption;
@@ -72,3 +71,4 @@ export default function Layout({ children }) {
     </>
   );
 }
+export default Layout;

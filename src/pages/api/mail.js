@@ -3,7 +3,7 @@ import {v4 as uniqueIdentifier} from "uuid"
 
 mail.setApiKey(process.env.SENDGRID_API_KEY)
 
-export default async function handler(req, res) {
+const handler = async (req, res) => {
   const formObject = JSON.parse(req.body)
   
   let message = `
@@ -35,3 +35,5 @@ export default async function handler(req, res) {
     res.status(500).json({ status: 'Fail' })
   }
 }
+
+export default handler;
