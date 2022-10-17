@@ -50,14 +50,14 @@ const ContactPage = () => {
           <span className={styles.close} onClick={handleCloseAlert}>
             x
           </span>
-          <p className="no-margin">
+          <p>
             Ocorreu um erro! Tente novamente ou nos contate por
             <Link href={hrefs.PHONE_NUMBER}>
-              <strong className="form-alert-a">&#160;ligação&#160;</strong>
+              <strong>&#160;ligação&#160;</strong>
             </Link>
             ou
             <Link href={hrefs.SEND_WHATSAPP_MESSAGE}>
-              <strong className="form-alert-a">&#160;whatsapp</strong>
+              <strong>&#160;whatsapp</strong>
             </Link>
             .
           </p>
@@ -113,7 +113,6 @@ const ContactPage = () => {
         </section>
       </form>
         {result}
-        <Loading/>
     </div>
   );
 }

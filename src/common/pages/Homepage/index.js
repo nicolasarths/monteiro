@@ -73,7 +73,6 @@ const Homepage = () => {
         <a href={hrefs.SEND_WHATSAPP_MESSAGE}>
           <FontAwesomeIcon
             icon={faWhatsapp}
-            className="rescue-button-whatsapp-icon rescue-button-bg"
           />
           <span>Solicitar resgate</span>
         </a>

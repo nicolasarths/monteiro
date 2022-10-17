@@ -4,7 +4,7 @@
     display: flex
     flex-direction: column
     align-items: center
-    
+
     min-height: 60vh
     width: 100%
     max-width: 1000px
@@ -26,8 +26,7 @@
             @extend .small-underline
             background-color: var(--primary-red)
             width: 100%
-            
-        
+
     form
         display: flex
         flex-direction: column
@@ -70,18 +69,25 @@
             margin-top: 10px
 
     .alert
-        background-color: red
-        position: fixed
-        z-index: 3
-        left: 30%
-        right: 30%
-        top: 50px
-        font-family: roboto, sans-serif
-        font-size: 1.3rem
-        font-weight: 100
+        background-color: var(--alert-background)
+        color: var(--alert-color)
+
+        font-size: 1.2rem
+        font-weight: 600
         border-radius: 10px
         text-align: center
-        padding: 15px 30px
+        
+        width: 90%
+        max-width: 1000px
+        
+        position: fixed
+        z-index: 3
+        top: 50px
+        left: 50%
+        transform: translate(-50%,-50%)
+
+        p
+            margin: 10px
 
         .close
             position: absolute
@@ -95,7 +101,7 @@
         background-color: var(--disclaimer-background)
         color: var(--disclaimer-color)
         font-weight: 600
-        
+
         display: flex
         padding: 22px 10px
         width: 100%

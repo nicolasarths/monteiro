@@ -10,11 +10,9 @@ const Success = () => {
         <title>Monteiro Guincho de Moto - Contato - Sucesso</title>
       </Head>
       <div className={styles.success}>
-        <h1 className="primary-red form-success-title">Sucesso!</h1>
+        <h1>Sucesso!</h1>
         <p>Recebemos sua mensagem e em breve iremos lhe retornar!</p>
-        <p className="primary-red">
-          <Link href="/">Retornar para a página inicial</Link>
-        </p>
+        <Link href="/">Retornar para a página inicial</Link>
       </div>
     </>
   );
