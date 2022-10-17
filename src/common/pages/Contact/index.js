@@ -69,7 +69,7 @@ const ContactPage = () => {
   const Loading = () => {
     return (
       <>
-        <span className="form-alert bg-gray padding">
+        <span className={styles.loading}>
           Enviando formulário. Aguarde...
         </span>
       </>
@@ -111,8 +111,9 @@ const ContactPage = () => {
           <textarea id="mensagem" name="mensagem" rows="3" required></textarea>
           <input className={styles.submit} type="submit" value="Enviar" />
         </section>
-        {result}
       </form>
+        {result}
+        <Loading/>
     </div>
   );
 }

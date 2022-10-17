@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Layout from 'common/layouts/main'
-import '../styles/globals.css'
-import '../styles/main.css'
+import 'common/styles/index.sass'
 
 import { GoogleAnalyticsComponent } from 'common/features/googleAnalytics'
 

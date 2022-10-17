@@ -31,6 +31,7 @@
     form
         display: flex
         flex-direction: column
+        align-items: center
         margin-bottom: 40px
 
         color: white
@@ -51,6 +52,7 @@
                 width: 40vw
 
         label
+            font-size: 1.2rem
             margin-block: 10px
 
         input, textarea
@@ -88,3 +90,19 @@
             top: 5px
             right: 15px
             cursor: pointer
+
+    .loading
+        background-color: var(--disclaimer-background)
+        color: var(--disclaimer-color)
+        font-weight: 600
+        
+        display: flex
+        padding: 22px 10px
+        width: 100%
+
+        @media screen and (min-width: 600px)
+            font-size: 19px
+            padding: 8px 14px
+            max-width: 1000px
+            width: 74vw
+            margin-bottom: 200px

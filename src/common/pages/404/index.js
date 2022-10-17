@@ -9,11 +9,9 @@ const NotFound = () => {
             <title>Monteiro Guincho de Moto - Página não encontrada</title>
         </Head>
         <div className={styles.notFound}>
-            <h1 className="not-found-title primary-red">Página não encontrada</h1>
+            <h1>Página não encontrada</h1>
             <p>Opa, parece que essa página não está disponível.</p>
-            <p className="primary-red">
-                <Link href="/">Retornar para a página inicial</Link>
-            </p>
+            <Link href="/">Retornar para a página inicial</Link>
         </div>
     </>)
 }
