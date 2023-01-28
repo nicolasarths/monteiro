@@ -16,7 +16,7 @@ const Carousel = ({ images }) => {
   }, [images]);
 
   const prevImage = () => {
-    setCurrentImageIndex((prev) => {
+    setCurr1entImageIndex((prev) => {
       if (prev === 0) return images.length - 1;
       return prev - 1;
     });
