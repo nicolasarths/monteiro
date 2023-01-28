@@ -10,7 +10,6 @@ const Carousel = ({ images }) => {
   const nextImage = useCallback(() => {
     setCurrentImageIndex((prev) => {
       const nextIndex = prev + 1;
-      console.log("image ", nextIndex);
       if (nextIndex > images.length - 1) return 0;
       return nextIndex;
     });
