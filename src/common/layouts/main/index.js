@@ -19,36 +19,38 @@ const Layout = ({ children }) => {
     return router.pathname == currentPath
       ? styles.menuOption + " " + styles.active
       : styles.menuOption;
-  }
+  };
 
   return (
-    <>
-      <div className={styles.cover}>
-        <Image
-          src={coverImage}
-          alt="Logo da Monteiro Mototransporte,
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <div className={styles.cover}>
+          <Image
+            src={coverImage}
+            alt="Logo da Monteiro Mototransporte,
                     guincho de motos especializado"
-        />
-      </div>
-      <div className={styles.menu}>
-        <Link href="/">
-          <div className={isActive("/")}>
-            <FontAwesomeIcon icon={faHome} />
-            <label>Início</label>
-          </div>
-        </Link>
-        <Link href="/contato">
-          <div className={isActive("/contato")}>
-            <FontAwesomeIcon icon={faCheckSquare} />
-            <label>Contato</label>
-          </div>
-        </Link>
-        <Link href={hrefs.PHONE_NUMBER}>
-          <div className={styles.menuOption}>
-            <FontAwesomeIcon icon={faPhone} />
-            <label>Ligar</label>
-          </div>
-        </Link>
+          />
+        </div>
+        <div className={styles.menu}>
+          <Link href="/">
+            <div className={isActive("/")}>
+              <FontAwesomeIcon icon={faHome} />
+              <label>Início</label>
+            </div>
+          </Link>
+          <Link href="/contato">
+            <div className={isActive("/contato")}>
+              <FontAwesomeIcon icon={faCheckSquare} />
+              <label>Contato</label>
+            </div>
+          </Link>
+          <Link href={hrefs.PHONE_NUMBER}>
+            <div className={styles.menuOption}>
+              <FontAwesomeIcon icon={faPhone} />
+              <label>Ligar</label>
+            </div>
+          </Link>
+        </div>
       </div>
       {children}
       <footer className={styles.footer}>
@@ -68,7 +70,7 @@ const Layout = ({ children }) => {
           </span>
         </span>
       </footer>
-    </>
+    </div>
   );
-}
+};
 export default Layout;

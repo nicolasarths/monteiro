@@ -1,0 +1,51 @@
+.carousel
+    position: relative
+
+    .bottom
+        object-position: bottom
+    .top
+        object-position: 0 0
+    img
+        width: 100%
+        height: fit-content
+        object-fit: contain
+
+        @media screen and ( min-width: 1000px )
+            max-height: 100vh
+            object-fit: cover
+
+    p
+        position: absolute
+        bottom: 0
+        max-width: 83%
+        max-height: 80%
+
+        padding: 0 2em
+        margin: 0
+        margin-bottom: 10px
+        padding-left: 3em
+        padding-bottom: 3em
+
+        opacity: 93%
+
+        font-size: .9rem
+        text-align: justify
+        font-weight: 700
+        color: white
+        text-shadow: 3px 3px 2px black
+        overflow: hidden
+
+        @media screen and (min-width: 450px)
+            font-size: 1rem
+        @media screen and (min-width: 600px)
+            font-size: 1.2rem
+        @media screen and (min-width: 760px)
+            font-size: 1.6rem
+        @media screen and (min-width: 1000px)
+            font-size: 1.9rem
+        @media screen and (min-width: 1300px)
+            font-size: 2.9rem
+            max-width: 76%
+    h2
+        position: absolute
+        left: -999999999px

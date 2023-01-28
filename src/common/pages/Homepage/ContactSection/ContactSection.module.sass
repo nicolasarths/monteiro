@@ -1,0 +1,126 @@
+@use "common/styles/variables/classes" as *
+
+.container
+    display: flex
+    flex-direction: column
+
+    min-height: 60vh
+    width: 100%
+    max-width: 1000px
+    margin: auto
+    padding: 20px
+    overflow: hidden
+
+    h1
+        color: white
+        font-size: 4rem
+        max-width: 70%
+        margin: 32px 0
+        padding: 0
+        margin-top: 15px
+        text-transform: uppercase
+        position: relative
+
+    form
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 40px
+
+        color: white
+        max-width: 1200px
+
+        width: 100%
+
+        section
+            display: flex
+            flex-flow: column nowrap
+            width: 100%
+
+        @media screen and (min-width: 600px)
+            justify-content: center
+            flex-flow: row nowrap
+            gap: 32px
+            section
+                width: 40vw
+
+        label
+            font-size: 1.7rem
+            text-transform: uppercase
+            font-weight: 600
+            margin-block: 10px
+
+        input, textarea
+            font-family: 'Open Sans', -apple-system, Helvetica Neue, sans-serif
+            font-size: 1.2rem
+            padding: .5em
+            margin-bottom: 10px
+            resize: none
+
+        .submit
+            background-color: white
+            font-weight: 700
+            text-align: left
+            margin-top: 10px
+
+        .submitDisclaimer
+            display: flex
+            align-items: flex-start
+
+            input
+                width: 1.5rem
+                height: 1.5rem
+                vertical-align: middle
+                margin: 0
+                margin-inline: 10px
+
+                outline: 0
+                cursor: pointer
+
+            p
+                margin: 0
+
+    .alert
+        background-color: var(--alert-background)
+        color: var(--alert-color)
+
+        font-size: 1.2rem
+        font-weight: 600
+        border-radius: 10px
+        text-align: center
+
+        width: 90%
+        max-width: 1000px
+
+        position: fixed
+        z-index: 3
+        top: 50px
+        left: 50%
+        transform: translate(-50%,-50%)
+
+        p
+            margin: 10px
+
+        .close
+            position: absolute
+            font-size: 1.3rem
+            font-weight: 600
+            top: 5px
+            right: 15px
+            cursor: pointer
+
+    .loading
+        background-color: var(--disclaimer-background)
+        color: var(--disclaimer-color)
+        font-weight: 600
+
+        display: flex
+        padding: 22px 10px
+        width: 100%
+
+        @media screen and (min-width: 600px)
+            font-size: 19px
+            padding: 8px 14px
+            max-width: 1000px
+            width: 74vw
+            margin-bottom: 200px

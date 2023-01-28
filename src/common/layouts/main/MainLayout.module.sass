@@ -1,75 +1,107 @@
-.cover
-    display: flex
-    justify-content: center
-    margin: auto
-    width: 100%
-    height: 150px
-    background-color: black
+.container
+    .header
+        .cover
+            display: flex
+            justify-content: center
+            margin: auto
+            width: 100%
+            background-color: black
 
-.menu
-    display: inline-flex
-    flex-flow: row nowrap
-    justify-content: space-evenly
-    width: 100%
+            img
+                max-width: 100%
+                max-height: 150px
+                margin-block: 30px
+                object-fit: contain
 
-    position: sticky
-    top: 0
-    z-index: 1
+        .menu
+            display: inline-flex
+            flex-flow: row nowrap
+            justify-content: space-evenly
+            width: 100%
 
-    color: white
-    background-color: black
+            position: sticky
+            top: 0
+            z-index: 1
 
-    padding: 10px
-    font-size: 1.5rem
+            color: white
+            background-color: black
 
-    .menuOption:hover, svg:hover
-        color: var(--primary-red)
-        cursor: pointer
+            padding: 10px
+            font-size: 1.5rem
 
-    .active
-        color: var(--primary-red)
+            .menuOption:hover, svg:hover
+                color: var(--primary-red)
+                cursor: pointer
 
-    svg
-        width: 1.3rem
-        margin-right: 0.5em
+            .active
+                color: var(--primary-red)
 
-.footer
-    display: inline-flex
-    flex-flow: row wrap
-    justify-content: space-evenly
-    align-items: center
-    gap: 10px
+            svg
+                width: 1rem
+                margin-right: 0.5em
 
-    width: 100%
-    padding: 2rem
-    background-color: black
+        @media screen and ( min-width: 1000px)
+            position: absolute
+            top: 0
+            width: 100%
+            z-index: 10
+            opacity: 80%
 
-    color: white
-    font-size: 1rem
+            display: flex
+            align-items: flex-end
+            justify-content: left
+            background-color: black
 
-    .credits a
-        font-weight: 600
-        &:hover
-            background: linear-gradient(to right, white, #4f8, #f0f, #fb9, #fff)
-            -webkit-text-fill-color: transparent
-            -webkit-background-clip: text
-            animation: rainbow-animation linear 1000s infinite
-            left: 50%
-            transform: translate(-50%,-50%)
+            .cover
+                width: fit-content
+                max-width: unset
+                padding: 10px
+                margin-left: 30px
+                img
+                    width: fit-content
+                    max-height: 100px
+                    margin: 0
 
-            @keyframes rainbow-animation
-                to
-                    background-position: 4500vh
+            &:hover
+                opacity: 100%
 
-    .list
-        display: flex
-        flex-flow: column
-@media only screen and (max-width: 900px)
     .footer
-        flex-flow: column
-        text-align: center
-        gap: 30px
+        display: inline-flex
+        flex-flow: row wrap
+        justify-content: space-evenly
+        align-items: center
+        gap: 10px
 
-@media only screen and (max-width: 600px)
-    .footer
-        padding-bottom: 130px
+        width: 100%
+        padding: 2rem
+        background-color: black
+
+        color: white
+        font-size: 1rem
+
+        .credits a
+            font-weight: 600
+            &:hover
+                background: linear-gradient(to right, white, #4f8, #f0f, #fb9, #fff)
+                -webkit-text-fill-color: transparent
+                -webkit-background-clip: text
+                animation: rainbow-animation linear 1000s infinite
+                left: 50%
+                transform: translate(-50%,-50%)
+
+                @keyframes rainbow-animation
+                    to
+                        background-position: 4500vh
+
+        .list
+            display: flex
+            flex-flow: column
+    @media only screen and (max-width: 900px)
+        .footer
+            flex-flow: column
+            text-align: center
+            gap: 30px
+
+    @media only screen and (max-width: 600px)
+        .footer
+            padding-bottom: 130px
