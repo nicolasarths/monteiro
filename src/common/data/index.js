@@ -4,4 +4,6 @@ export const hrefs = {
   PHONE_NUMBER: "tel:051986561694",
   SEND_MAIL: "mailto:contato@monteiromototransporte.com.br",
   DEV_WEBSITE: "https://www.nicolasarths.com.br/",
+  CONTACT_VIA_WEBSITE: "/#contato",
+  CONTACT_SUCCESS_PAGE: "/sucesso-ao-contatar",
 };

@@ -48,17 +48,15 @@ const Footer = () => {
             </Link>
           </span>
           <span className={styles.listItem}>
-            <Link href="/contato">Enviar mensagem pelo site</Link>
-          </span>
-          <span className={styles.listItem}>
-            <Link href="mailto:contato@monteiromototransporte.com.br">
-              Iniciar conversa por e-mail
+            <Link href={hrefs.CONTACT_VIA_WEBSITE}>
+              Enviar mensagem pelo site
             </Link>
           </span>
           <span className={styles.listItem}>
-            <Link href="https://www.nicolasarths.com.br/">
-              Página do Desenvolvedor
-            </Link>
+            <Link href={hrefs.SEND_MAIL}>Iniciar conversa por e-mail</Link>
+          </span>
+          <span className={styles.listItem}>
+            <Link href={hrefs.DEV_WEBSITE}>Página do Desenvolvedor</Link>
           </span>
         </div>
       </div>
@@ -70,7 +68,7 @@ const Footer = () => {
 
         <span className={styles.credits}>
           designed and developed by{" "}
-          <a href="https://www.nicolasarths.com.br">@nicolasarths</a>
+          <a href={hrefs.DEV_WEBSITE}>@nicolasarths</a>
         </span>
       </div>
     </footer>

@@ -30,7 +30,7 @@ const ContactPage = () => {
     });
 
     if (response.status > 199 && response.status < 300) {
-      location.href = "/contato/sucesso";
+      location.href = hrefs.CONTACT_SUCCESS_PAGE;
     } else {
       alert(Failure);
     }
@@ -75,7 +75,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div id="contato" className={styles.container}>
       <h1>Contato</h1>
       <form id="send-message" method="post" onSubmit={handleSubmit}>
         <section>
@@ -116,7 +116,7 @@ const ContactPage = () => {
               interceptados. Ao clicar em &quot;enviar&quot;, você concorda que
               os dados enviados não são sensíveis e podem se tornar públicos.
               Caso não concorde, você pode enviar um e-mail diretamente clicando{" "}
-              <a href="mailto:contato@monteiromototransporte.com.br">aqui</a>.
+              <a href={hrefs.SEND_MAIL}>aqui</a>.
             </p>
           </div>
         </section>
