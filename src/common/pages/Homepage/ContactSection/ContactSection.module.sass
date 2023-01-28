@@ -4,6 +4,8 @@
     display: flex
     flex-direction: column
 
+    position: relative
+
     min-height: 60vh
     width: 100%
     margin: auto
@@ -107,18 +109,18 @@
     .loading
         background-color: var(--disclaimer-background)
         color: var(--disclaimer-color)
+
+        padding-top: 450px
+        padding-left: 10%
+        width: 100%
+        height: 100%
+
+        font-size: 2rem
         font-weight: 600
 
-        display: flex
-        padding: 22px 10px
-        width: 100%
-
-        @media screen and (min-width: 600px)
-            font-size: 19px
-            padding: 8px 14px
-            max-width: 1000px
-            width: 74vw
-            margin-bottom: 200px
+        position: absolute
+        left: 0
+        top: 0
 
     @media screen and ( min-width: 900px  )
         max-width: 90vw

@@ -23,9 +23,11 @@ const Header = () => {
   };
   return (
     <div className={styles.header}>
-      <div className={styles.cover}>
-        <Image src={logo} alt="logo da Monteiro Guincho de Moto" />
-      </div>
+      <Link href="/">
+        <div className={styles.cover}>
+          <Image src={logo} alt="logo da Monteiro Guincho de Moto" />
+        </div>
+      </Link>
       <div className={styles.menu}>
         <Link href="/">
           <div className={isActive("/")}>
