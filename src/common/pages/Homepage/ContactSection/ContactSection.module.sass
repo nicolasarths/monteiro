@@ -6,7 +6,6 @@
 
     min-height: 60vh
     width: 100%
-    max-width: 1000px
     margin: auto
     padding: 20px
     overflow: hidden
@@ -28,7 +27,6 @@
         margin-bottom: 40px
 
         color: white
-        max-width: 1200px
 
         width: 100%
 
@@ -38,11 +36,6 @@
             width: 100%
 
         @media screen and (min-width: 600px)
-            justify-content: center
-            flex-flow: row nowrap
-            gap: 32px
-            section
-                width: 40vw
 
         label
             font-size: 1.7rem
@@ -51,11 +44,12 @@
             margin-block: 10px
 
         input, textarea
-            font-family: 'Open Sans', -apple-system, Helvetica Neue, sans-serif
-            font-size: 1.2rem
+            font-family: 'Roboto', -apple-system, Helvetica Neue, sans-serif
+            font-size: 1.3rem
             padding: .5em
             margin-bottom: 10px
             resize: none
+            font-weight: 600
 
         .submit
             background-color: white
@@ -68,17 +62,18 @@
             align-items: flex-start
 
             input
-                width: 1.5rem
-                height: 1.5rem
+                width: 4rem
                 vertical-align: middle
                 margin: 0
                 margin-inline: 10px
+                margin-top: .5rem
+                scale: 150%
 
-                outline: 0
                 cursor: pointer
 
             p
                 margin: 0
+                line-height: 180%
 
     .alert
         background-color: var(--alert-background)
@@ -124,3 +119,6 @@
             max-width: 1000px
             width: 74vw
             margin-bottom: 200px
+
+    @media screen and ( min-width: 900px  )
+        max-width: 90vw

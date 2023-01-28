@@ -106,11 +106,11 @@ const ContactPage = () => {
           <label form="send-message" htmlFor="mensagem">
             Mensagem
           </label>
-          <textarea id="mensagem" name="mensagem" rows="3" required></textarea>
+          <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
           <input className={styles.submit} type="submit" value="Enviar" />
           <div className={styles.submitDisclaimer}>
+            <input type="checkbox" required />
             <p>
-              <input type="checkbox" required />
               Dados contidos nesse formulário serão encaminhados por uma
               ferramenta de terceiros e, portanto, estão sujeitos a serem
               interceptados. Ao clicar em &quot;enviar&quot;, você concorda que

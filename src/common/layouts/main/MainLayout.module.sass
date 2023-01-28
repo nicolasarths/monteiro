@@ -9,8 +9,8 @@
 
             img
                 max-width: 100%
-                max-height: 150px
-                margin-block: 30px
+                max-height: 100px
+                margin-block: 10px
                 object-fit: contain
 
         .menu
@@ -27,7 +27,9 @@
             background-color: black
 
             padding: 10px
-            font-size: 1.5rem
+
+            @media screen and ( min-width: 600px )
+                font-size: 1.5rem
 
             .menuOption:hover, svg:hover
                 color: var(--primary-red)
