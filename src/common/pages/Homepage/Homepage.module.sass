@@ -6,6 +6,7 @@
     margin: auto
 
 .whatsappButton
+    font-size: 1.4rem
     display: flex
     flex-wrap: nowrap
     justify-content: center
@@ -36,8 +37,15 @@
         position: absolute
         bottom: -12px
         left: 20px
-        width: 1.5rem
-        height: 3.6rem
+        width: 2.2rem
+        height: 4.5rem
+
+    @media screen and ( max-width: 395px  )
+        font-size: 1.2rem
+        svg
+            left: 10px
+            width: 1.6rem
+            height: 4.2rem
 
     @media only screen and (min-width: 600px)
         width: fit-content
