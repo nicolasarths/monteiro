@@ -35,12 +35,7 @@ const Header = () => {
             <label>Início</label>
           </div>
         </Link>
-        <Link href="/contato">
-          <div className={isActive("/contato")}>
-            <FontAwesomeIcon icon={faCheckSquare} />
-            <label>Contato</label>
-          </div>
-        </Link>
+
         <Link href={hrefs.PHONE_NUMBER}>
           <div className={styles.menuOption}>
             <FontAwesomeIcon icon={faPhone} />
