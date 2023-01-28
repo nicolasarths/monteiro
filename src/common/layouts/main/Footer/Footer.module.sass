@@ -1,0 +1,71 @@
+
+.footer
+    width: 100%
+    padding: 2rem
+    padding-bottom: 200px
+    background-color: black
+
+    color: white
+    font-size: 1rem
+    letter-spacing: .2rem
+
+    display: flex
+    flex-flow: column
+    text-align: center
+
+    img
+        place-self: center
+        max-width: 100px
+        height: fit-content
+        object-fit: contain
+
+    .list
+        display: flex
+        flex-flow: column
+
+        h5
+            margin: 0
+            margin-top: 1rem
+
+            font-size: 1.1rem
+            text-transform: uppercase
+
+        .listItem
+            font-size: 1rem
+            overflow: hidden
+            margin-block: 1rem
+
+            .email
+                word-break: break-all
+            svg
+                width: .7rem
+                margin-right: .93rem
+
+    .rights
+        display: block
+        margin-block: 2rem
+        font-size: 2rem
+        font-weight: 900
+    .credits a
+        font-weight: 600
+        &:hover
+            background: linear-gradient(to right, #6300dd, yellow, #07ff62, #d500d5, red, #6477f4)
+            -webkit-text-fill-color: transparent
+            -webkit-background-clip: text
+            animation: rainbow-animation linear 1000s infinite
+            left: 50%
+            transform: translate(-50%,-50%)
+
+            @keyframes rainbow-animation
+                to
+                    background-position: 4500vh
+
+    @media screen and ( min-width: 763px )
+        .grid
+            margin-block: 3rem
+            display: grid
+            grid-template-columns: 1fr 1fr
+            gap: 2rem
+            place-items: center
+            max-width: 1000px
+            margin: auto
