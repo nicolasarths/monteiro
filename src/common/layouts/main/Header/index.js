@@ -8,6 +8,7 @@ import {
   faHome,
   faCheckSquare,
   faPhone,
+  faAddressBook,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -36,6 +37,12 @@ const Header = () => {
           </div>
         </Link>
 
+        <Link href={hrefs.CONTACT_VIA_WEBSITE}>
+          <div className={styles.menuOption}>
+            <FontAwesomeIcon icon={faCheckSquare} />
+            <label>Contato</label>
+          </div>
+        </Link>
         <Link href={hrefs.PHONE_NUMBER}>
           <div className={styles.menuOption}>
             <FontAwesomeIcon icon={faPhone} />

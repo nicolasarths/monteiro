@@ -4,7 +4,7 @@ const PresentationSection = () => {
   return (
     <div className={styles.container}>
       <p>
-        A Monteiro Guincho de Moto nasceu em 2017 com o intuito de se
+        A Monteiro Guincho de Moto nasceu em 2016 com o intuito de se
         estabelecer como referência no transporte especializado de motocicletas
         na Grande Porto Alegre.
       </p>
