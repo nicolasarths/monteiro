@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 import { hrefs } from "common/data";
 
-import ContactSection from "./ContactSection";
 import Carousel from "./Carousel";
+import PresentationSection from "./PresentationSection";
+import ContactSection from "./ContactSection";
 
 import images from "./images";
 
@@ -18,6 +19,7 @@ const Homepage = () => {
       </Head>
       <main className={styles.container}>
         <Carousel images={images} />
+        <PresentationSection />
         <ContactSection />
       </main>
       <span className={styles.whatsappButton}>

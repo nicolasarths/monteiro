@@ -76,7 +76,7 @@ const ContactPage = () => {
 
   return (
     <div id="contato" className={styles.container}>
-      <h1>Contato</h1>
+      <h2>Contato</h2>
       <form id="send-message" method="post" onSubmit={handleSubmit}>
         <section>
           <label form="send-message" htmlFor="nome">
