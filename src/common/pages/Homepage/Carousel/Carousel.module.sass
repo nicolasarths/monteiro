@@ -49,3 +49,45 @@
     h2
         position: absolute
         left: -999999999px
+
+    button
+        width: 20px
+        padding: 0
+        position: absolute
+        top: 44%
+        background-color: unset
+        filter: drop-shadow(3px 3px 3px black)
+
+        opacity: 70%
+
+        &:hover
+            opacity: 100%
+
+    .next
+        right: 2%
+    .prev
+        left: 2%
+
+        @media screen and ( min-width: 600px )
+            scale: 140%
+
+    .menu
+        display: flex
+        width: 100px
+        justify-content: space-around
+        gap: 10px
+
+        position: absolute
+        top: unset
+        bottom: 8%
+        left: 50%
+        transform: translateX(-50%)
+
+        button
+            position: static
+            background-color: white
+            height: 10px
+            border-radius: 15px
+
+        .active
+            background-color: red
