@@ -72,12 +72,18 @@ const Carousel = ({ images }) => {
       nextImage();
     }, 7000);
   }, [nextImage]);
+
   return (
     <div className={styles.carousel}>
       <Image
-        className={styles[images[currentImageIndex].type]}
+        className={styles.bigImg}
         alt={images[currentImageIndex].alt}
-        src={images[currentImageIndex].src}
+        src={images[currentImageIndex].src.big}
+      />
+      <Image
+        className={styles.smallImg}
+        alt={images[currentImageIndex].alt}
+        src={images[currentImageIndex].src.small}
       />
 
       <h2>Guincho de Moto</h2>
