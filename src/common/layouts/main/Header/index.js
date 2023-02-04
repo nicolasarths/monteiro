@@ -14,7 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styles from "./Header.module.sass";
 
-const Header = () => {
+const Menu = () => {
   const router = useRouter();
 
   const isActive = (currentPath) => {
@@ -23,34 +23,43 @@ const Header = () => {
       : styles.menuOption;
   };
   return (
-    <div className={styles.header}>
+    <div className={styles.menu}>
       <Link href="/">
-        <div className={styles.cover}>
-          <Image src={logo} alt="logo da Monteiro Guincho de Moto" />
+        <div className={isActive("/")}>
+          <FontAwesomeIcon icon={faHome} />
+          <label>Início</label>
         </div>
       </Link>
-      <div className={styles.menu}>
-        <Link href="/">
-          <div className={isActive("/")}>
-            <FontAwesomeIcon icon={faHome} />
-            <label>Início</label>
-          </div>
-        </Link>
 
-        <Link href={hrefs.CONTACT_VIA_WEBSITE}>
-          <div className={styles.menuOption}>
-            <FontAwesomeIcon icon={faCheckSquare} />
-            <label>Contato</label>
-          </div>
-        </Link>
-        <Link href={hrefs.PHONE_NUMBER}>
-          <div className={styles.menuOption}>
-            <FontAwesomeIcon icon={faPhone} />
-            <label>Ligar</label>
-          </div>
-        </Link>
-      </div>
+      <Link href={hrefs.CONTACT_VIA_WEBSITE}>
+        <div className={styles.menuOption}>
+          <FontAwesomeIcon icon={faCheckSquare} />
+          <label>Contato</label>
+        </div>
+      </Link>
+      <Link href={hrefs.PHONE_NUMBER}>
+        <div className={styles.menuOption}>
+          <FontAwesomeIcon icon={faPhone} />
+          <label>Ligar</label>
+        </div>
+      </Link>
     </div>
+  );
+};
+
+const Header = () => {
+  return (
+    <>
+      <div className={styles.header}>
+        <Link href="/">
+          <div className={styles.cover}>
+            <Image src={logo} alt="logo da Monteiro Guincho de Moto" />
+          </div>
+        </Link>
+        <Menu />
+      </div>
+      <Menu />
+    </>
   );
 };
 
