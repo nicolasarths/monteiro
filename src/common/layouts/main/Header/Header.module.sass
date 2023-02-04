@@ -1,4 +1,7 @@
 .header
+
+    z-index: 5
+    position: relative
     @media screen and ( min-width: 800px)
         position: absolute
         top: 0
@@ -38,14 +41,12 @@
                 max-height: 80px
                 scale: 120%
                 margin: 0
-                z-index: 5
 
     .menu
-        position: static
-        display: inline-flex
+        position: relative
 
 .menu
-    display: none
+    display: inline-flex
     flex-flow: row nowrap
     justify-content: space-evenly
     width: 100%
@@ -62,7 +63,6 @@
     @media screen and ( min-width: 600px )
         font-size: 1.5rem
     @media screen and ( min-width: 800px )
-        display: inline-flex
 
     .menuOption:hover, svg:hover
         color: var(--primary-red)
