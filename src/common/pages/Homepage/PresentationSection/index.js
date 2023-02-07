@@ -1,7 +1,11 @@
 import styles from "./PresentationSection.module.sass";
+import { useState } from "react";
+import ReactPlayer from "react-player";
 
 const PresentationSection = () => {
+  const [Clicked, setClicked] = useState(false)
   return (
+    <>
     <div className={styles.container}>
       <p>
         A Monteiro Guincho de Moto nasceu em 2016 com o intuito de se
@@ -47,14 +51,23 @@ const PresentationSection = () => {
       </p>
       <h4>Demonstração</h4>
       <p>Assista ao vídeo de uma de nossas rampas funcionando!</p>
-      <iframe
+      {/* <iframe
         src="https://www.youtube.com/embed/Zw9nMCUJNRY"
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
-      ></iframe>
-    </div>
+      ></iframe> */}
+      <button onClick={()=>{setClicked(!Clicked)}}>
+        Assistir ao vídeo institucional
+      </button>
+      </div>
+      {Clicked && (
+          <div className={styles.player}>
+            <ReactPlayer url="https://www.youtube.com/embed/Zw9nMCUJNRY" />
+          </div>
+        )}
+    </>
   );
 };
 export default PresentationSection;
