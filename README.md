@@ -12,3 +12,9 @@ Website developed to a Motorcycle Towing Services Company in Porto Alegre, Rio G
 - [Uuid](https://www.npmjs.com/package/uuid)
 
 You can colaborate by checking this [projects' issues](https://github.com/nicolasarths/monteiro/issues).
+
+### Collaborators
+
+- [Behzad Khadim](https://github.com/boomboss200) - open and close homepage video functionality.
+
+Thank you for your help!
