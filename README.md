@@ -18,11 +18,10 @@ We welcome contributions to the Monteiro project! Here are some ways you can con
 - Open a new issue if you find a bug or have a feature request
 - Fork the repository and submit a pull request with your changes
 
-Before contributing, please read our [code of conduct](CODE_OF_CONDUCT.md).
-
 ## Collaborators
 
 - [Behzad Khadim](https://github.com/boomboss200) - open and close homepage video functionality.
+- [Akhil Binoy](https://github.com/akhil888binoy) - Modified Readme
 
 ## License
 
