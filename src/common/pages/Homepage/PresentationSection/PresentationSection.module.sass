@@ -1,22 +1,81 @@
 .container
-    padding: 20px
     margin: auto
     max-width: 1600px
-
-    font-size: 1.2rem
+    font-size: 1.4rem
+    line-height: 2.8rem
+    letter-spacing: 0.2rem
     font-weight: 300
+    padding-block: 32px
+    >*
+        padding-inline: 32px
 
+    @media screen and ( min-width: 350px )
+        font-size: 1.8rem
     @media screen and ( min-width: 800px )
-        max-width: 90%
+        padding: 64px
+
+    li
+        line-height: 130%
+        list-style-type: none
+        &::before
+            content: " - "
+            margin-right: 5px
 
     p
         text-align: justify
 
         &:first-of-type
             margin-top: 0
-    li
-        text-indent: 1rem
-        line-height: 1.4rem
+
+    .intro
+        .enguicou
+            padding-top: 24px
+            font-size: 3rem
+            font-weight: 900
+            letter-spacing: 5px
+            line-height: 140%
+            text-align: left
+
+        .precisa
+            font-size: 2rem
+            line-height: 130%
+
+        .buttonContainer
+            text-align: center
+
+            button
+                border-radius: 10px
+                border: white solid 1.8px
+                background: linear-gradient(110deg, #ff0000, #fb4b4b, #ff0000,#ff5500, #ff0000 )
+                background-size: 200% 200%
+                animation: gradientAnimation 3s infinite alternate
+
+                font-weight: 800
+                font-size: 1.3rem
+                letter-spacing: .3rem
+                padding: 2rem
+                width: 100%
+                max-width: 500px
+                display: inline-block
+
+                @keyframes gradientAnimation
+                    0%
+                        background-position: 0%
+
+                    100%
+                        background-position: 100%
+
+    .historia
+        padding: 0
+        >*
+            padding-inline: 32px
+
+    .imageContainer
+        width: 100%
+        height: fit-content
+        padding: 0
+        img
+            object-fit: scale-down
 
     .player
         padding: 20px 0
