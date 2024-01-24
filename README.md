@@ -1,20 +1,28 @@
 # Monteiro
 
-Website developed to a Motorcycle Towing Services Company in Porto Alegre, Rio Grande do Sul, Brazil.
+Monteiro is a website developed for a motorcycle towing services company in Porto Alegre, Rio Grande do Sul, Brazil. The website is built using React and NextJS and uses Twillio's SendGrid for email notifications. The project is open source and welcomes contributions from anyone who is interested in improving the website.
 
-### Tools
+## Getting Started
 
-- [React](https://reactjs.org/)
-- [NextJS](https://nextjs.org/)
-- [SASS](https://sass-lang.com/)
-- [Twillio's SendGrid](https://sendgrid.com/)
-- [Font Awesome Icons](https://fontawesome.com/)
-- [Uuid](https://www.npmjs.com/package/uuid)
+To get started with the Monteiro project, follow these steps:
 
-You can colaborate by checking this [projects' issues](https://github.com/nicolasarths/monteiro/issues).
+1. Clone the repository: `git clone https://github.com/nicolasarths/monteiro.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
 
-### Collaborators
+## Contributing
+
+We welcome contributions to the Monteiro project! Here are some ways you can contribute:
+
+- Check the project's issues tab for tasks that need to be completed
+- Open a new issue if you find a bug or have a feature request
+- Fork the repository and submit a pull request with your changes
+
+## Collaborators
 
 - [Behzad Khadim](https://github.com/boomboss200) - open and close homepage video functionality.
+- [Akhil Binoy](https://github.com/akhil888binoy) - Modified Readme
 
-Thank you for your help!
+## License
+
+The Monteiro project is licensed under the [MIT License](LICENSE).
