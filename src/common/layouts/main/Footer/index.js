@@ -33,7 +33,7 @@ const Footer = () => {
           <span className={styles.listItem}>
             <FontAwesomeIcon icon={faEnvelope} />
             <span className={styles.email}>
-              contato@monteiromototransporte.com.br
+              guinchodemoto@hotmail.com
             </span>
           </span>
         </div>
